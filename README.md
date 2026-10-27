@@ -8,7 +8,7 @@ A dark blue theme for JupyterLab and Jupyter Notebook 7+, inspired by the [Moonl
 
 <br/>
 
-![JupyterLab Moonlight Preview](images/preview.png)
+![JupyterLab Moonlight Preview](https://raw.githubusercontent.com/snelow/jupyterlab-moonlight/main/images/preview.png)
 
 ---
 
