@@ -1,0 +1,40 @@
+{
+  "name": "jupyterlab-moonlight",
+  "version": "0.1.0",
+  "description": "Moonlight dark theme for JupyterLab and Jupyter Notebook 7+",
+  "author": "snelow",
+  "homepage": "https://github.com/snelow/jupyterlab-moonlight",
+  "bugs": {
+    "url": "https://github.com/snelow/jupyterlab-moonlight/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snelow/jupyterlab-moonlight.git"
+  },
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension",
+    "jupyterlab-theme",
+    "moonlight",
+    "dark-theme"
+  ],
+  "license": "MIT",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
+    "style/index.js"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "jupyterlab": {
+    "extension": true,
+    "theme": true,
+    "outputDir": "jupyterlab_moonlight/labextension",
+    "themePath": "style/index.css",
+    "_build": {
+      "load": "static/remoteEntry.18b3107a2356a7103aea.js",
+      "extension": "./extension"
+    }
+  }
+}

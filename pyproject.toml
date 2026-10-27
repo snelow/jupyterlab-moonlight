@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jupyterlab-moonlight"
+version = "0.1.0"
+description = "Moonlight dark theme for JupyterLab and Jupyter Notebook 7+"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "snelow" }
+]
+keywords = ["jupyter", "jupyterlab", "jupyterlab-extension", "jupyterlab-theme", "moonlight"]
+classifiers = [
+    "Framework :: Jupyter",
+    "Framework :: Jupyter :: JupyterLab",
+    "Framework :: Jupyter :: JupyterLab :: 4",
+    "Framework :: Jupyter :: JupyterLab :: Extensions",
+    "Framework :: Jupyter :: JupyterLab :: Extensions :: Themes",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "jupyterlab>=4.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/snelow/jupyterlab-moonlight"
+Repository = "https://github.com/snelow/jupyterlab-moonlight"
+"Bug Tracker" = "https://github.com/snelow/jupyterlab-moonlight/issues"
+
+[tool.hatch.build.targets.wheel.shared-data]
+"jupyterlab_moonlight/labextension" = "share/jupyter/labextensions/jupyterlab-moonlight"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/jupyterlab_moonlight",
+    "/images",
+    "/README.md",
+    "/LICENSE",
+    "/pyproject.toml",
+]
